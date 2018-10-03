@@ -1,6 +1,4 @@
-# Não Esqueça
-
-## Menu
+# Menu
 - É um arquivo ``res/menu/nome_do_menu.xml``.
 - ``app:showAsAction``
 	- Always
@@ -31,9 +29,4 @@ override fun onOptionsItemSelected(item: MenuItem): Boolean {
         else -> super.onOptionsItemSelected(item)
     }
 }
-```
-
-## Toast
-```kotlin
-Toast.makeText(this, "Texto para aparecer no toast", Toast.LENGTH_SHORT).show()
 ```
