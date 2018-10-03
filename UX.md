@@ -70,8 +70,8 @@ dispositivo.
 		- 48dp para touch target
 		- 24dp para click target
 
-![Keylines](../Estudos/keylines1.png)
-![Keylines](../Estudos/keylines2.png)
+![Keylines](keylines1.png)
+![Keylines](keylines2.png)
 
 ### Cores - [Material Design](https://material.io/design/color/the-color-system.html)
 - Primary Color
