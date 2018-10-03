@@ -26,6 +26,7 @@ Os métodos, estados que compõem o ciclo de vida de uma Activity são:
 	- Evento ON_DESTROY
 
 ![Lifecycle](https://developer.android.com/guide/components/images/activity_lifecycle.png)
+![Lifecycle](Lifecycle.png)
 
 Você pode salvar alguns dados usando o método ``onSaveInstance()`` e 
 recuperar com ``onRestoreInstanceState()``
