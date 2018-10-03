@@ -75,7 +75,7 @@ contém informações úteis
 
 Uma Uri tem esse formato:
 ```
-scheme:][//authority][path][?query][#fragment]
+[scheme:][//authority][path][?query][#fragment]
 ```
 
 exmplos de uri:
