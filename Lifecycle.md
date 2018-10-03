@@ -28,7 +28,7 @@ Os métodos, estados que compõem o ciclo de vida de uma Activity são:
 ![Lifecycle](https://developer.android.com/guide/components/images/activity_lifecycle.png)
 ![Lifecycle](Lifecycle.png)
 
-Você pode salvar alguns dados usando o método ``onSaveInstance()`` e 
+Você pode salvar alguns dados usando o método ``onSaveInstanceState()`` e 
 recuperar com ``onRestoreInstanceState()``
 
 ```kotlin
@@ -67,3 +67,7 @@ instance
     // ...
 }
 ```
+
+**Obs:** quando rotaciona o dispositivo, é chamado  ``onCreate()``, 
+podendo perder certos dados da Activity, nesse caso lembrar de usar 
+``onSaveInstanceState()`` e ``savedInstanceState``.
