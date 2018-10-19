@@ -38,7 +38,7 @@ Colocar a RecyclerView no layout da ListaActivity:
 	android:layout_height="match_parent" />
 ```
 
-Depois é preciso criar uma classe adapter que pede uma lista como 
+Depois é preciso criar uma classe **adapter** que pede uma lista como 
 parâmetro:
 
 ```kotlin
@@ -53,7 +53,8 @@ import kotlinx.android.synthetic.main.contatinho_item_lista.view.*
 
 class ContatinhoAdapter(val contatinhos: List<String>)
     : RecyclerView.Adapter<ContatinhoAdapter.ViewHolder>() {
-
+	
+	//Para inflar a view no layout
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): 
 ViewHolder {
         val view = 
@@ -61,15 +62,18 @@ LayoutInflater.from(parent.context).inflate(R.layout.contatinho_item_lista,
 parent, false)
         return ViewHolder(view)
     }
-
+	
+	//Retorna o tamanho da lista de contatinhos
     override fun getItemCount(): Int {
         return contatinhos.size
     }
-
+	
+	//Para linkar os dados na View
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindView(contatinhos[position])
     }
-
+	
+	//Criar e relacionar as ViewHolder com o id das views
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bindView(contatinhoNome: String) {
